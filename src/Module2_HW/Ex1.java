@@ -19,29 +19,66 @@ multiplication  (int array[]), multiplication (double[])
 modulus(int array[]), modulus(double[])
 secondLargest(int array[]), secondLargest(double[])
          */
-        int [] ar = {10,5,9};
+
+
+
+
+
+        int [] ar = {3,5,22,3,45,89,99,650,-15,-3};
         sum(ar);
+        max(ar);
+        min(ar);
+
+
+
     }
-     static int sum(int [] array) {
+
+    static int sum(int [] array) {
 
         int result = 0;
 
-        for (int i = 0; i < array.length; i++){
-            result = result + array[i];
+        for (int i: array){
+            result += i;
         }
-        System.out.println(result);
+        System.out.println("Sum = " + result);
         return result;
 
     }
 
-     /*static int test(int a, int b){
-        int res;
-        if (a > b)
-            res = a;
-        else
-            res = b;
-        System.out.println(res);
-        return res;
-    }*/
+    static int max(int [] array){
+
+        int result = 0;
+
+        for (int i: array){
+
+            if (result < i){
+                result = i;
+
+            }
+
+        }
+
+        System.out.println("Max = " + result);
+        return result;
+
+    }
+
+    static int min (int [] array){
+
+        int result = array[0];
+
+        for (int i: array){
+            if (result > i){
+                result = i;
+            }
+
+
+        }
+
+        System.out.println("Min = " + result);
+        return result;
+    }
+
+
 
 }
