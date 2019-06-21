@@ -1,5 +1,8 @@
 package Module2_HW;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
+
 public class Ex1 {
     public static void main(String[] args) {
         /*
@@ -20,18 +23,43 @@ modulus(int array[]), modulus(double[])
 secondLargest(int array[]), secondLargest(double[])
          */
 
-
-
-
-
-        int [] ar = {3,5,22,3,45,89,99,650,-15,-3};
+        int [] ar = {3,5,2};
+        System.out.println(Arrays.toString(ar));
         sum(ar);
         max(ar);
         min(ar);
-
+        //maxPositive(ar);
+        multiplication(ar);
 
 
     }
+
+    static int multiplication(int [] array){
+        int result = 1;
+        for (int i: array){
+
+            result = result * i;
+        }
+        System.out.println("multiplication = " + result);
+        return result;
+
+    }
+
+
+    static int maxPositive(int [] array){
+
+        int result = array[0];
+        for (int i: array){
+            if (result > 0){
+                result = i;
+            }
+
+        }
+
+        System.out.println("maxPositive = " + result);
+        return result;
+    }
+
 
     static int sum(int [] array) {
 
@@ -47,20 +75,17 @@ secondLargest(int array[]), secondLargest(double[])
 
     static int max(int [] array){
 
-        int result = 0;
+        int result = array[0];
 
         for (int i: array){
 
-            if (result < i){
+            if (result < i ){
                 result = i;
 
             }
-
         }
-
         System.out.println("Max = " + result);
         return result;
-
     }
 
     static int min (int [] array){
@@ -71,10 +96,7 @@ secondLargest(int array[]), secondLargest(double[])
             if (result > i){
                 result = i;
             }
-
-
         }
-
         System.out.println("Min = " + result);
         return result;
     }
