@@ -23,22 +23,44 @@ modulus(int array[]), modulus(double[])
 secondLargest(int array[]), secondLargest(double[])
          */
 
-        int [] ar = {3,5,2};
+        int [] ar = {345,2,9,5,2,34};
         System.out.println(Arrays.toString(ar));
         sum(ar);
         max(ar);
         min(ar);
         //maxPositive(ar);
         multiplication(ar);
+        secondLargest(ar);
 
 
+    }
+
+    static int secondLargest(int [] array){
+
+        int max = 0;
+        int secondLar = 0;
+
+        for (int i: array){
+
+            if (i > max){
+                secondLar = max;
+                max = i;
+
+            }else if (i > secondLar){
+                secondLar = i;
+            }
+
+        }
+
+        System.out.println("SecondLargest = " + secondLar);
+        return secondLar;
     }
 
     static int multiplication(int [] array){
         int result = 1;
         for (int i: array){
 
-            result = result * i;
+            result *= i;
         }
         System.out.println("multiplication = " + result);
         return result;
