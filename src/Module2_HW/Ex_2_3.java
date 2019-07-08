@@ -45,21 +45,44 @@ Oww NO
 
     static int bank (int balances[], String ownerName[]){
 
+
+
         Scanner in = new Scanner(System.in);
         System.out.println("Input name: ");
         String owName = in.nextLine();
         //System.out.println(owName);
 
         System.out.println("Input amount: ");
-        int withdrawal = in.nextInt();
+        double withdrawal = in.nextInt();
         //System.out.println(withdrawal);
 
         for (int i = 0; i < ownerName.length; i++ ){
-            System.out.println(ownerName[i]);
-            if (owName == ownerName[i]){
+            //System.out.println(ownerName[i]);
+            if (owName.equals(ownerName[i])){
+                System.out.print(owName + " ");
+
+                for (int j = 0; j < balances.length; j++){
+
+                    if (i == j) {
+
+                        double outComm = 0;
+                        double outBal = 0;
+
+                        outComm = withdrawal * 0.05;
+                        outBal = (balances[j]) - withdrawal - outComm;
+
+                        if (outBal > 0) {
+                            System.out.println((int)withdrawal + " " + (int)outBal);
+                        } else {
+                            System.out.println("NO");
+                        }
+                    }
+
+                }
 
             }
         }
+
 
 
 
