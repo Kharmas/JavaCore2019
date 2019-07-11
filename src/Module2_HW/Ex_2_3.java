@@ -8,7 +8,6 @@ public class Ex_2_3 {
 
         /*You need to write method which withdraw money of particular account owner if he/she can.
         Print name + NO of withdrawal fs not possible and name + sum of withdrawal + balance after withdrawal in other case.
-        Commision is 5% for all cases.
 
 Example
 
@@ -45,8 +44,6 @@ Oww NO
 
     static int bank (int balances[], String ownerName[]){
 
-
-
         Scanner in = new Scanner(System.in);
         System.out.println("Input name: ");
         String owName = in.nextLine();
@@ -56,15 +53,14 @@ Oww NO
         double withdrawal = in.nextInt();
         //System.out.println(withdrawal);
 
-        for (int i = 0; i < ownerName.length; i++ ){
+        for (int i = 0; i < ownerName.length; i++) {
             //System.out.println(ownerName[i]);
-            if (owName.equals(ownerName[i])){
+            if (owName.equals(ownerName[i])) {
                 System.out.print(owName + " ");
 
-                for (int j = 0; j < balances.length; j++){
+                for (int j = 0; j < balances.length; j++) {
 
                     if (i == j) {
-
                         double outComm = 0;
                         double outBal = 0;
 
@@ -72,7 +68,8 @@ Oww NO
                         outBal = (balances[j]) - withdrawal - outComm;
 
                         if (outBal > 0) {
-                            System.out.println((int)withdrawal + " " + (int)outBal);
+                            System.out.println(Double.valueOf(withdrawal).intValue() + " " + (int) outBal);
+
                         } else {
                             System.out.println("NO");
                         }
@@ -82,9 +79,6 @@ Oww NO
 
             }
         }
-
-
-
 
         return 0;
 
