@@ -6,6 +6,7 @@ public class Arithmetic {
         int sum;
         sum = a + b;
         System.err.println(sum);
-        return sum;
+        return 0;
+
     }
 }
