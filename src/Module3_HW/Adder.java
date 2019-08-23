@@ -10,7 +10,9 @@ public class Adder extends Arithmetic {
 //            result = false;
 //        }
 //        return result;
+
         boolean res = a >= b;
+        System.out.println(res);
         return res;
     }
 

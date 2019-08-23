@@ -13,10 +13,15 @@ public class Main {
         Arithmetic arithmetic = new Arithmetic();
         arithmetic.add(26,4);
 
-        Square square = new Square(4);
-        Triangle triangle = new Triangle(1, 2, 3);
-        printPerimetr(square);
-        printPerimetr(triangle);
+        //Square square = new Square(4);
+        //Triangle triangle = new Triangle(1, 2, 3);
+        //printPerimetr(square);
+        //printPerimetr(triangle);
+
+        Adder adder = new Adder();
+        adder.check(5,3);
+
+
 
     }
 
