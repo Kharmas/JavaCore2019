@@ -1,12 +1,15 @@
 package For_training;
 
 import Module3_HW.Bird;
+import Module3_HW.CollegeStuden;
 
-public class Main {
+public class UserMain {
 
     public static void main(String[] args) {
 
        User user = new User("Jo",65, "Oz");
+
+
 
        //System.out.println(user.name);
        // System.out.println(user.age);
