@@ -6,6 +6,7 @@ public class Student {
     String lastName;
     int group;
     Course[] coursesTaken;
+    int age;
 
     public Student(String firstName, String lastName, int group){
 
@@ -15,4 +16,8 @@ public class Student {
 
     }
 
+    public Student(String lastName, Course[] coursesTaken) {
+        this.lastName = lastName;
+        this.coursesTaken = coursesTaken;
+    }
 }
