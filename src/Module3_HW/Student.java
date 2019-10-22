@@ -13,8 +13,7 @@ public class Student {
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;
-
-    }
+      }
 
     public Student(String lastName, Course[] coursesTaken) {
         this.lastName = lastName;
