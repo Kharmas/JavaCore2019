@@ -1,6 +1,6 @@
 package For_training;
 
-public class User {
+public class UserTest {
 
     String name;
     int age;
@@ -8,7 +8,7 @@ public class User {
     int id;
     
 
-    public User(String name, int age, String company, int id){
+    public UserTest(String name, int age, String company, int id){
         this.name = name;
         this.age = age;
         this.company = company;

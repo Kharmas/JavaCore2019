@@ -6,8 +6,10 @@ public class Main {
 
         Student stud1 = new Student("Tom", "Lee",220);
         Student stud2 = new Student("Ed","Black",285);
-        System.out.println(stud1.lastName);
         CollegeStuden cStud = new CollegeStuden("Mike","Green",120,"CSM",3,2652);
+
+        Bird bird = new Bird();
+        bird.say();
 
 
 //        Arithmetic arithmetic = new Arithmetic();
@@ -22,8 +24,5 @@ public class Main {
 
     }
 
-    public static void printPerimetr(Shape figura) {
-        System.out.println(figura.perimetr());
-    }
 
 }

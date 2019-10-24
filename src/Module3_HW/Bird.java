@@ -6,4 +6,8 @@ public class Bird {
         return "I am".concat(words);
     }
 
+    void say (){System.out.println(" I am walking");}
+
+
+
 }
