@@ -9,7 +9,6 @@ public class Student {
     private int age;
 
     public Student(String firstName, String lastName, int group){
-
         this.firstName = firstName;
         this.lastName = lastName;
         this.group = group;
