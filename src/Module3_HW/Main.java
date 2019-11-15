@@ -21,10 +21,11 @@ public class Main {
         SpecialStudent sStud = new SpecialStudent("Tim","Osborn",125);
         SpecialStudent sStud1 = new SpecialStudent("Osborn",courses);
         SpecialStudent sStud2 = new SpecialStudent("Tom","Lee",220,2523);
+        
+
+     Student student = new Student("Tom","Lee",124);
 
 
-        Bird bird = new Bird();
-        bird.say();
 
 
 //        Arithmetic arithmetic = new Arithmetic();
