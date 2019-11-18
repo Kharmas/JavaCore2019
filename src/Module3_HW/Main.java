@@ -7,6 +7,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        User user1 = new User("Ted",4000,2,"OzSoft",450,"USD");
+        //user1.paySalary();
+        user1.withdraw(100);
+
+
 
         Course cour1 = new Course(new Date(19, 10, 28), "TestCourse");
         Course cour2 = new Course(123,"ex","Ed");
@@ -28,6 +33,8 @@ public class Main {
 
         Bird bird = new Bird();
         bird.say();
+
+
 
 
 //        Arithmetic arithmetic = new Arithmetic();
