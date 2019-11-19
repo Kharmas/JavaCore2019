@@ -10,6 +10,8 @@ public class Main {
         User user1 = new User("Ted",4000,2,"OzSoft",450,"USD");
         //user1.paySalary();
         user1.withdraw(100);
+        user1.companyNameLenght();
+        user1.monthIncreaser(2);
 
 
 
@@ -31,8 +33,8 @@ public class Main {
         SpecialStudent sStud2 = new SpecialStudent("Tom","Lee",220,2523);
 
 
-        Bird bird = new Bird();
-        bird.say();
+       // Bird bird = new Bird();
+       // bird.say();
 
 
 

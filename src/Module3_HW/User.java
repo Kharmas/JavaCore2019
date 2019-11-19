@@ -101,7 +101,14 @@ public class User {
 
     //companyNameLenght - вычисляет длину имя компании
     void companyNameLenght(){
+        System.out.println("Довжина назви компанії - " + companyName.length());
+    }
 
+    // monthIncreaser(int addMonth) - увеличивает monthsOfEmployment на addMonth
+
+    void monthIncreaser(int addMonth){
+        monthsOfEmployee = monthsOfEmployee + addMonth;
+        System.out.println("monthsOfEmployee - " + monthsOfEmployee);
     }
 
 
