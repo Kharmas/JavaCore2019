@@ -1,10 +1,13 @@
 package module3_HW;
 
+import forTraining.Train1;
+
 import java.util.Date;
 
 public class Main {
 
     public static void main(String[] args) {
+
 
         User user1 = new User("Ted",4000,2,"OzSoft",450,"USD");
         //user1.paySalary();
