@@ -1,7 +1,8 @@
-package Module2;
+package module2;
 
-public class FourthClass {
+public class SecondClass {
     public static void main(String[] args) {
         System.out.println("Мой первый класс на Java");
+        System.out.println("second");
     }
 }

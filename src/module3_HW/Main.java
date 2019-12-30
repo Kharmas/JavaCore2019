@@ -1,6 +1,5 @@
-package Module3_HW;
+package module3_HW;
 
-import java.time.Instant;
 import java.util.Date;
 
 public class Main {
@@ -12,8 +11,6 @@ public class Main {
         user1.withdraw(100);
         user1.companyNameLenght();
         user1.monthIncreaser(2);
-
-
 
         Course cour1 = new Course(new Date(19, 10, 28), "TestCourse");
         Course cour2 = new Course(123,"ex","Ed");
@@ -32,23 +29,14 @@ public class Main {
         SpecialStudent sStud1 = new SpecialStudent("Osborn",courses);
         SpecialStudent sStud2 = new SpecialStudent("Tom","Lee",220,2523);
 
-
        // Bird bird = new Bird();
        // bird.say();
-
-
-
 
 //        Arithmetic arithmetic = new Arithmetic();
 //        arithmetic.add(26,4);
 //
 //        Adder adder = new Adder();
 //        adder.check(5,3);
-
-
-
-
-
     }
 
 

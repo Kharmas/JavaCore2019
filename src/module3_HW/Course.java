@@ -1,4 +1,4 @@
-package Module3_HW;
+package module3_HW;
 import java.util.Date;
 
 public class Course {

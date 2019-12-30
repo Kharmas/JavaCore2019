@@ -1,6 +1,5 @@
-package Module2_HW;
+package module2_HW;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Ex1 {

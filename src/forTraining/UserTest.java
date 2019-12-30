@@ -1,4 +1,4 @@
-package For_training;
+package forTraining;
 
 public class UserTest {
 

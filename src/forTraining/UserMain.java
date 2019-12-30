@@ -1,4 +1,4 @@
-package For_training;
+package forTraining;
 
 public class UserMain {
 
@@ -10,6 +10,11 @@ public class UserMain {
         System.out.println(user.name);
 
         Cat cat1 = new Cat("Red",15);
+
+        String[] names = {"My", "Name"};
+
+        Train1 ex2 = new Train1(names);
+        Train1 train1 = new Train1(new String[] {"Hello", "World"});
 
 
 
