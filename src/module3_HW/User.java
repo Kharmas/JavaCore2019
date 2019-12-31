@@ -87,16 +87,25 @@ public class User {
     }
     //withdraw(int summ) - снимает деньги с баланса с комиссией 5%, если сумма < 1000 и комиссией 10% в других случаях
     void withdraw(int summ){
+        double com;
         double balanceShow;
-        if (summ < 1000){
-           double com = summ * 0.05;
+//        if (summ < 1000){
+//           com = summ * 0.05;
+//           balanceShow = balance - summ - com;
+//           System.out.println("Баланс після зняття коштів - " + balanceShow);
+//        } else {
+//            com = summ * 0.10;
+//            balanceShow = balance - summ - com;
+//            System.out.println("Баланс після зняття коштів - " + balanceShow);
+//
+//        }
+           balanceShow = (summ < 1000)
+                   ? (com = summ * 0.05)
+                   : (com = summ * 0.10);
            balanceShow = balance - summ - com;
-           System.out.println("Баланс після зняття коштів - " + balanceShow);
-        } else {
-           double com = summ * 0.10;
-           balanceShow = balance - summ - com;
-           System.out.println("Баланс після зняття коштів - " + balanceShow);
-        }
+          // System.out.println("Баланс після зняття коштів - " + balanceShow);
+
+
     }
 
     //companyNameLenght - вычисляет длину имя компании
@@ -110,12 +119,6 @@ public class User {
         monthsOfEmployee = monthsOfEmployee + addMonth;
         System.out.println("monthsOfEmployee - " + monthsOfEmployee);
     }
-
-
-
-
-
-    
 
 
 

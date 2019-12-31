@@ -6,7 +6,7 @@ public class Train1 {
     private int num;
 
    public Train1(String [] names)  {
-     this.names = names;
+       this.names = names;
    }
 
 
@@ -18,10 +18,10 @@ public class Train1 {
         return num;
     }
 
-    public int bintree(int num){
-       int countNum = (num >10)? num + 10 : num + 50;
-       return countNum;
-   }
+    void myMet (String [] names){
+
+    }
+
 
 
 
