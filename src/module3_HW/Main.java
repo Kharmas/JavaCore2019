@@ -11,9 +11,12 @@ public class Main {
 
         User user1 = new User("Ted",4000,2,"OzSoft",450,"USD");
         //user1.paySalary();
+
         user1.withdraw(100);
 
         user1.companyNameLenght();
+        System.out.println("Balance - " + user1.getBalance());
+
         user1.monthIncreaser(2);
 
         Course cour1 = new Course(new Date(19, 10, 28), "TestCourse");
